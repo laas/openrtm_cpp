@@ -1,0 +1,9 @@
+<stack>
+  <description brief="OpenRTM">
+    ROS package of the 3rd party package OpenRTM-aist.
+  </description>
+  <author>Thomas Moulard/thomas.moulard@gmail.com</author>
+  <license>BSD</license>
+  <review status="experimental" notes=""/>
+  <url>http://ros.org/wiki/openrtm</url>
+</stack>

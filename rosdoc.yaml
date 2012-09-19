@@ -1,0 +1,4 @@
+ - builder: external
+   external_url: http://www.openrtm.org/OpenRTM-aist/documents/current/cxx/classreference_en/index.html
+   output_dir: cpp
+   name: C++ API
