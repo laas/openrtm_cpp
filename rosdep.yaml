@@ -1,2 +1,12 @@
-omniORB4:
-  ubuntu: omniorb4 omniorb4-idl libomniorb4-dev
+omniorb:
+  ubuntu:
+    quantal: omniorb omniidl omniorb-nameserver libomniorb4-1 libomniorb4-dev libomnithread3-dev libomnithread3c2
+    precise: omniorb omniidl omniorb-nameserver libomniorb4-1 libomniorb4-dev libomnithread3-dev libomnithread3c2
+    oneiric: omniorb omniidl omniorb-nameserver libomniorb4-1 libomniorb4-dev libomnithread3-dev libomnithread3c2
+    natty: omniorb4 omniidl4 omniorb4-nameserver libomniorb4-1 libomniorb4-dev libomnithread3-dev libomnithread3c2
+    maverick: omniorb4 omniidl4 omniorb4-nameserver libomniorb4-1 libomniorb4-dev libomnithread3-dev libomnithread3c2
+    lucid: omniorb4 omniidl4 omniorb4-nameserver libomniorb4-1 libomniorb4-dev libomnithread3-dev libomnithread3c2
+  debian: omniorb4 omniidl4 omniorb4-nameserver libomniorb4-1 libomniorb4-dev libomnithread3-dev libomnithread3c2
+  fedora: |
+    #!/bin/bash
+    echo "omniorb is not available in the Fedora package manager - please install it from source";

@@ -22,5 +22,5 @@
 
 
   <rosdep name="pkg-config"/>
-  <rosdep name="omniORB"/>
+  <rosdep name="omniorb"/>
 </package>
