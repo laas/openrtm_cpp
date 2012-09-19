@@ -10,3 +10,12 @@ omniorb:
   fedora: |
     #!/bin/bash
     echo "omniorb is not available in the Fedora package manager - please install it from source";
+
+uuid:
+  arch: util-linux
+  ubuntu: uuid-dev
+  debian: uuid-dev
+  fedora: libuuid-devel
+  rhel: libuuid-devel
+  macports: ossp-uuid
+  freebsd: e2fsprogs-libuuid

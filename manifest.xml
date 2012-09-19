@@ -22,5 +22,7 @@
 
 
   <rosdep name="pkg-config"/>
+  <rosdep name="uuid"/>
   <rosdep name="omniorb"/>
+  <rosdep name="python-yaml"/>
 </package>
