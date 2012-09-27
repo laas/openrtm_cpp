@@ -13,8 +13,8 @@ INSTALL_DIR = install
 CONFIGURE_FLAGS = \
 	--prefix=`rospack find openrtm_cpp`/$(INSTALL_DIR)/ \
 	CPPFLAGS="-DNDEBUG" 				\
-	CFLAGS="-O3"					\
-	CXXFLAGS="-O3"
+	CFLAGS="-g -O3"					\
+	CXXFLAGS="-g -O3"
 
 include $(shell rospack find mk)/download_unpack_build.mk
 
