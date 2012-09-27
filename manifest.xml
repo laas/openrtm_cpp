@@ -1,6 +1,6 @@
 <package>
-  <description brief="OpenRTM">
-    ROS package of the 3rd pary package OpenRTM-aist.
+  <description brief="OpenRTM C++">
+    ROS package of the 3rd party package OpenRTM-aist C++.
   </description>
   <author>Thomas Moulard/thomas.moulard@gmail.com</author>
   <license>BSD</license>
