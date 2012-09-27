@@ -1,4 +1,4 @@
-all: openrtm
+all: openrtm_cpp
 
 VERSION     = 1.1.0
 TARBALL     = build/OpenRTM-aist-$(VERSION)-RELEASE.tar.gz
@@ -11,14 +11,14 @@ MD5SUM_FILE = OpenRTM-aist-$(VERSION)-RELEASE.tar.bz2.md5sum
 INSTALL_DIR = install
 
 CONFIGURE_FLAGS = \
-	--prefix=`rospack find openrtm`/$(INSTALL_DIR)/ \
+	--prefix=`rospack find openrtm_cpp`/$(INSTALL_DIR)/ \
 	CPPFLAGS="-DNDEBUG" 				\
 	CFLAGS="-O3"					\
 	CXXFLAGS="-O3"
 
 include $(shell rospack find mk)/download_unpack_build.mk
 
-openrtm: $(INSTALL_DIR)/installed
+openrtm_cpp: $(INSTALL_DIR)/installed
 
 $(INSTALL_DIR)/installed: $(SOURCE_DIR)/unpacked
 	cd $(SOURCE_DIR)	  		\

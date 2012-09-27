@@ -1,5 +1,5 @@
 <stack>
-  <description brief="OpenRTM">
+  <description brief="OpenRTM C++">
     ROS package of the 3rd party package OpenRTM-aist.
   </description>
   <author>Thomas Moulard/thomas.moulard@gmail.com</author>
