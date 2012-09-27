@@ -6,6 +6,12 @@ TARBALL_URL = \
 http://www.openrtm.org/pub/OpenRTM-aist/cxx/$(VERSION)/OpenRTM-aist-$(VERSION)-RELEASE.tar.bz2
 UNPACK_CMD  = tar xfj
 SOURCE_DIR  = build/OpenRTM-aist-$(VERSION)
+TARBALL_PATCH = \
+	patches/SDOPackage.idl-$(VERSION).patch	\
+	patches/ArtEC-$(VERSION).patch		\
+	build/openrtm-bin-$(VERSION).patch
+
+
 MD5SUM_FILE = OpenRTM-aist-$(VERSION)-RELEASE.tar.bz2.md5sum
 
 INSTALL_DIR = install
@@ -18,7 +24,12 @@ CONFIGURE_FLAGS = \
 
 include $(shell rospack find mk)/download_unpack_build.mk
 
-openrtm_cpp: $(INSTALL_DIR)/installed
+openrtm_cpp: generate_patch $(INSTALL_DIR)/installed
+
+generate_patch:
+	sed "s|@OPENRTM_BIN_PATH@|`rospack find openrtm_cpp`/install/bin|g" \
+	`rospack find openrtm_cpp`/patches/openrtm-bin-$(VERSION).patch.in  \
+	> `rospack find openrtm_cpp`/build/openrtm-bin-$(VERSION).patch
 
 $(INSTALL_DIR)/installed: $(SOURCE_DIR)/unpacked
 	cd $(SOURCE_DIR)	  		\
