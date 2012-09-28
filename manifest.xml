@@ -25,4 +25,5 @@
   <rosdep name="uuid"/>
   <rosdep name="omniorb"/>
   <rosdep name="python-yaml"/>
+  <rosdep name="doxygen" />
 </package>
