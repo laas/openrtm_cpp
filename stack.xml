@@ -7,5 +7,5 @@
   <review status="experimental" notes=""/>
   <url>http://ros.org/wiki/openrtm_cpp</url>
   <depend stack="ros" />
-
+  <depend stack="documentation" />
 </stack>
